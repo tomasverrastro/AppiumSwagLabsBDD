@@ -11,8 +11,16 @@ public class MenuPage extends BasePage{
     @AndroidFindBy (accessibility = "com.saucelabs.mydemoapp.android:id/menuIV")
     private WebElement settingsBtn;
 
+    @AndroidFindBy (accessibility = "com.saucelabs.mydemoapp.android:id/cartRL")
+    private WebElement cartBtn;
+
     public SettingsPage pressSettingsBtn(){
         click(settingsBtn, "Pressing Settings button");
         return new SettingsPage();
+    }
+
+    public CartPage pressCartBtn(){
+        click(cartBtn, "Pressing Cart button");
+        return new CartPage();
     }
 }
