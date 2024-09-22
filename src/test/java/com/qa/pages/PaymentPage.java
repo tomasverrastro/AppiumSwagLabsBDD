@@ -5,19 +5,19 @@ import org.openqa.selenium.WebElement;
 
 public class PaymentPage extends MenuPage {
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/enterPaymentMethodTV\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/enterPaymentMethodTV")
     private WebElement msgPaymentMethod;
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/nameET\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/nameET")
     private WebElement txtFullName;
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/cardNumberET\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/cardNumberET")
     private WebElement txtCardNumber;
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/expirationDateET\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/expirationDateET")
     private WebElement txtExpirationDate;
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/securityCodeET\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/securityCodeET")
     private WebElement txtSecurityCode;
 
     @AndroidFindBy(accessibility = "Saves payment info and launches screen to review checkout data")

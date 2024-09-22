@@ -8,10 +8,10 @@ public class MenuPage extends BasePage{
 
     TestUtils utils = new TestUtils();
 
-    @AndroidFindBy (accessibility = "com.saucelabs.mydemoapp.android:id/menuIV")
+    @AndroidFindBy (id = "com.saucelabs.mydemoapp.android:id/menuIV")
     private WebElement settingsBtn;
 
-    @AndroidFindBy (accessibility = "com.saucelabs.mydemoapp.android:id/cartRL")
+    @AndroidFindBy (id = "com.saucelabs.mydemoapp.android:id/cartRL")
     private WebElement cartBtn;
 
     public SettingsPage pressSettingsBtn(){

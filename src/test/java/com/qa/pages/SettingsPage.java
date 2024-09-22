@@ -8,16 +8,16 @@ public class SettingsPage extends BasePage{
 
     TestUtils utils = new TestUtils();
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/itemTV\" and @text=\"Catalog\"]")
+    @AndroidFindBy(uiAutomator = "new UiSelector().text(\"Catalog\")")
     private WebElement btnCatalog;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/itemTV\" and @text=\"Drawing\"]")
+    @AndroidFindBy(uiAutomator = "new UiSelector().text(\"Drawing\")")
     private WebElement btnDrawing;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/itemTV\" and @text=\"Reset App State\"]")
+    @AndroidFindBy(uiAutomator = "new UiSelector().text(\"Reset App State\")")
     private WebElement btnResetApp;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/itemTV\" and @text=\"Log In\"]")
+    @AndroidFindBy(uiAutomator = "new UiSelector().text(\"Log In\")")
     private WebElement btnLogIn;
 
     public ProductsPage pressCatalogBtn(){
@@ -30,8 +30,9 @@ public class SettingsPage extends BasePage{
         return new DrawingPage();
     }
 
-    public void pressResetAppBtn(){
+    public SettingsPage pressResetAppBtn(){
         click(btnResetApp, "Pressing Reset App Button");
+        return this;
     }
 
     public LoginPage pressLoginBtn(){

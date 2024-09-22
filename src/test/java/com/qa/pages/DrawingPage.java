@@ -1,4 +1,6 @@
 package com.qa.pages;
 
-public class DrawingPage {
+public class DrawingPage extends MenuPage{
+
+
 }

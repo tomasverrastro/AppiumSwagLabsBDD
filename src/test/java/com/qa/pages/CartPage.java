@@ -8,7 +8,7 @@ public class CartPage extends MenuPage{
 
     TestUtils utils = new TestUtils();
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/productTV\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/productTV")
     private WebElement msgPageTitle;
 
     @AndroidFindBy(accessibility = "Removes product from cart")
@@ -22,14 +22,13 @@ public class CartPage extends MenuPage{
         return getText(msgPageTitle, "Page title is: ");
     }
 
-    public void pressRemoveItem() throws Exception {
+    public CartPage pressRemoveItem() throws Exception {
         click(andScrollToElementUsingUiScrollable("content-desc", "Removes product from cart"), "Clicking on Remove Item button");
+        return this;
     }
 
     public LoginPage pressCheckout(){
         click(btnCheckout);
         return new LoginPage();
     }
-
-
 }

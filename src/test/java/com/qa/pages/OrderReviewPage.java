@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 
 public class OrderReviewPage extends MenuPage{
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/enterShippingAddressTV\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/enterShippingAddressTV")
     private WebElement msgOrderReview;
 
     @AndroidFindBy(accessibility = "Completes the process of checkout")

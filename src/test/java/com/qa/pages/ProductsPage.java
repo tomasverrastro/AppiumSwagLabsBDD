@@ -11,11 +11,11 @@ public class ProductsPage extends MenuPage {
 
     TestUtils utils = new TestUtils();
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Products']")
-    private WebElement titleTxt;
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/productTV")
+    private WebElement msgPageTitle;
 
     public String getTitle(){
-        return getText(titleTxt, "Product page title is:");
+        return getText(msgPageTitle, "Product page title is:");
     }
 
     public String getProductTitle(String title) throws Exception {

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 
 public class CheckoutCompletePage extends MenuPage{
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/completeTV\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/completeTV")
     private WebElement msgCheckoutComplete;
 
 

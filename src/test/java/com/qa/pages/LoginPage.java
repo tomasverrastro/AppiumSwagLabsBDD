@@ -5,13 +5,13 @@ import org.openqa.selenium.WebElement;
 
 public class LoginPage extends MenuPage{
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/loginTV\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/loginTV")
     private WebElement msgPageTitle;
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/nameET\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/nameET")
     private WebElement txtUsername;
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/passwordET\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/passwordET")
     private WebElement txtPassword;
 
     @AndroidFindBy(accessibility = "Tap to login with given credentials")

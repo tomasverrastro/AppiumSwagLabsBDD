@@ -5,22 +5,22 @@ import org.openqa.selenium.WebElement;
 
 public class CheckoutPage extends MenuPage{
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/checkoutTitleTV\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/checkoutTitleTV")
     private WebElement msgPageTitle;
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/fullNameET\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/fullNameET")
     private WebElement txtFullName;
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/address1ET\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/address1ET")
     private WebElement txtAddress1;
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/cityET\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/cityET")
     private WebElement txtCity;
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/zipET\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/zipET")
     private WebElement txtZipCode;
 
-    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.saucelabs.mydemoapp.android:id/countryET\"]")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/countryET")
     private WebElement txtCountry;
 
     @AndroidFindBy(accessibility = "Saves user info for checkout")
