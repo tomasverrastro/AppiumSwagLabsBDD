@@ -1,0 +1,14 @@
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:40.014 ServerManager:21 - starting appium server
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:42.006 ServerManager:30 - Appium server started
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:42.018 DriverManager:29 - initializing Appium driver
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:42.030 PropertyManager:17 - Loading config properties
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:42.030 CapabilitiesManager:17 - getting capabilities
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:42.050 CapabilitiesManager:33 - appUrl isC:\Users\Tomas\IdeaProjects\AppiumSwagLabsBDD\src\test\resources\apps\SwagLabsApp.apk
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:49.385 DriverManager:41 - Driver is initialized
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:51.014 BasePage:53 - Pressing Settings button
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:52.125 BasePage:53 - Pressing Login Button
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:53.637 BasePage:70 - Login with username: bod@example.com
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:54.756 BasePage:70 - Login with password: 10203040
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:55.332 BasePage:53 - press login button
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:56.714 BasePage:96 - Product page title is:Products
+[Android_Pixel_4 INFO ] 2024-10-22 20:08:57.575 VideoManager:35 - video path: Android_Pixel_4\Videos\TC01 - Login with correct data.mp4
