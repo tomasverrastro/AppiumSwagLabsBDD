@@ -37,6 +37,7 @@ public class ProductDetailsPage extends MenuPage{
     }
 
     public ProductDetailsPage pressRateBtn() {
+        waitForClickable(btnRate5Stars);
         click(btnRate5Stars, "Pressing 5 stars rating button");
         return this;
     }
@@ -60,7 +61,7 @@ public class ProductDetailsPage extends MenuPage{
     }
 
     public String getProductDescription() {
-        return getText(msgProductDescription, "Product description is: ");
+        return getText(andScrollToElementUsingUiScrollable("resourceId", "com.saucelabs.mydemoapp.android:id/descTV"), "product description is: ");
     }
 
     public String getCartAmount() {

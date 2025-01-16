@@ -8,8 +8,9 @@ public class CartPage extends MenuPage{
 
     TestUtils utils = new TestUtils();
 
-    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/productTV")
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/noItemTitleTV")
     private WebElement msgPageTitle;
+
 
     @AndroidFindBy(accessibility = "Removes product from cart")
     private WebElement btnRemoveItem;
@@ -23,7 +24,7 @@ public class CartPage extends MenuPage{
     }
 
     public CartPage pressRemoveItem() throws Exception {
-        click(andScrollToElementUsingUiScrollable("content-desc", "Removes product from cart"), "Clicking on Remove Item button");
+        click(andScrollToElementUsingUiScrollable("text", "Remove Item"), "Clicking on Remove Item button");
         return this;
     }
 

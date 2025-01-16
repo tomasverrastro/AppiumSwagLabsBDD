@@ -26,6 +26,9 @@ public class CheckoutPage extends MenuPage{
     @AndroidFindBy(accessibility = "Saves user info for checkout")
     private WebElement btnToPayment;
 
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/zipErrorTV")
+    private WebElement msgZipError;
+
     public String getPageTitle() {
         return getText(msgPageTitle, "Page Title is: ");
     }
@@ -63,5 +66,9 @@ public class CheckoutPage extends MenuPage{
     public PaymentPage pressToPaymentBtn() {
         click(btnToPayment, "press to payment button");
         return new PaymentPage();
+    }
+
+    public String getZipErrorTxt() {
+        return getText(msgZipError, "Zip Error text is: ");
     }
 }

@@ -1,14 +1,33 @@
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:40.014 ServerManager:21 - starting appium server
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:42.006 ServerManager:30 - Appium server started
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:42.018 DriverManager:29 - initializing Appium driver
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:42.030 PropertyManager:17 - Loading config properties
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:42.030 CapabilitiesManager:17 - getting capabilities
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:42.050 CapabilitiesManager:33 - appUrl isC:\Users\Tomas\IdeaProjects\AppiumSwagLabsBDD\src\test\resources\apps\SwagLabsApp.apk
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:49.385 DriverManager:41 - Driver is initialized
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:51.014 BasePage:53 - Pressing Settings button
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:52.125 BasePage:53 - Pressing Login Button
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:53.637 BasePage:70 - Login with username: bod@example.com
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:54.756 BasePage:70 - Login with password: 10203040
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:55.332 BasePage:53 - press login button
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:56.714 BasePage:96 - Product page title is:Products
-[Android_Pixel_4 INFO ] 2024-10-22 20:08:57.575 VideoManager:35 - video path: Android_Pixel_4\Videos\TC01 - Login with correct data.mp4
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:18.684 ServerManager:21 - starting appium server
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:20.695 ServerManager:30 - Appium server started
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:20.708 DriverManager:29 - initializing Appium driver
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:20.720 PropertyManager:17 - Loading config properties
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:20.721 CapabilitiesManager:17 - getting capabilities
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:20.740 CapabilitiesManager:33 - appUrl isC:\Users\Tomas\IdeaProjects\AppiumSwagLabsBDD\src\test\resources\apps\SwagLabsApp.apk
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:26.788 DriverManager:41 - Driver is initialized
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:28.375 BasePage:65 - Pressing Settings button
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:29.453 BasePage:65 - Pressing Login Button
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:30.901 BasePage:82 - Login with username: bod@example.com
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:32.046 BasePage:82 - Login with password: 10203040
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:32.611 BasePage:65 - press login button
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:34.009 BasePage:108 - Product page title is:Products
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:34.860 VideoManager:35 - video path: Android_Pixel_4\Videos\TC01 - Login with correct data.mp4
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:35.349 BasePage:65 - Pressing Settings button
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:36.407 BasePage:65 - Pressing Login Button
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:37.776 BasePage:82 - Login with password: 10203040
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:38.313 BasePage:65 - press login button
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:39.041 BasePage:108 - Required Username error is:  Username is required
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:39.805 VideoManager:35 - video path: Android_Pixel_4\Videos\TC02 - Try to login without filling the user field.mp4
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:40.274 BasePage:65 - Pressing Settings button
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:41.324 BasePage:65 - Pressing Login Button
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:42.640 BasePage:82 - Login with username: bod@example.com
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:43.204 BasePage:65 - press login button
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:43.933 BasePage:108 - Required Password error is:  Enter Password
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:44.657 VideoManager:35 - video path: Android_Pixel_4\Videos\TC03 - Try to login without filling the password field.mp4
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:45.136 BasePage:65 - Pressing Settings button
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:46.175 BasePage:65 - Pressing Login Button
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:47.517 BasePage:82 - Login with username: alice@example.com
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:48.612 BasePage:82 - Login with password: 10203040
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:49.152 BasePage:65 - press login button
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:49.774 BasePage:108 - Required Password error is:  Sorry this user has been locked out.
+[Android_Pixel_4 INFO ] 2025-01-15 23:28:50.512 VideoManager:35 - video path: Android_Pixel_4\Videos\TC04 - Try to login with a blocked user.mp4

@@ -23,6 +23,9 @@ public class PaymentPage extends MenuPage {
     @AndroidFindBy(accessibility = "Saves payment info and launches screen to review checkout data")
     private WebElement btnReviewOrder;
 
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/securityCodeErrorTV")
+    private WebElement msgSecurityCodeErrorTxt;
+
     public String getPaymentMethodTxt() {
         return getText(msgPaymentMethod, "Payment method text is: ");
     }
@@ -54,5 +57,9 @@ public class PaymentPage extends MenuPage {
     public OrderReviewPage pressReviewOrderBtn() {
         click(btnReviewOrder, "press review order button");
         return new OrderReviewPage();
+    }
+
+    public String getSecurityCodeErrorTxt() {
+        return getText(msgSecurityCodeErrorTxt, "Security Code Error text is: ");
     }
 }

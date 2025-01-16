@@ -18,8 +18,8 @@ import org.junit.runner.RunWith;
         glue = {"com.qa.stepdef"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         dryRun = false,
-        monochrome = true,
-        tags = "@test"
+        monochrome = true//,
+        //tags = "@test"
 )
 
 public class TestRunner {

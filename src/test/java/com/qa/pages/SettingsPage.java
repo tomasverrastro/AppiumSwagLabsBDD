@@ -20,6 +20,12 @@ public class SettingsPage extends BasePage{
     @AndroidFindBy(uiAutomator = "new UiSelector().text(\"Log In\")")
     private WebElement btnLogIn;
 
+    @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/button1\")")
+    private WebElement btnConfirmReset;
+
+    @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/message\")")
+    private WebElement msgSuccessfulReset;
+
     public ProductsPage pressCatalogBtn(){
         click(btnCatalog, "Pressing Catalog Button");
         return new ProductsPage();
@@ -38,5 +44,13 @@ public class SettingsPage extends BasePage{
     public LoginPage pressLoginBtn(){
         click(btnLogIn, "Pressing Login Button");
         return new LoginPage();
+    }
+
+    public void pressConfirmResetBtn(){
+        click(btnConfirmReset);
+    }
+
+    public String getSuccessfulResetTxt(){
+        return msgSuccessfulReset.getText();
     }
 }

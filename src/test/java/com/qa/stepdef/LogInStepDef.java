@@ -39,4 +39,14 @@ public class LogInStepDef {
     public void userShouldViewTheProductsPageWithTitle(String title) {
         Assert.assertEquals(new ProductsPage().getTitle(), title);
     }
+
+    @Then("User should view Required Username error text as {string}")
+    public void userShouldViewRequiredUsernameErrorTextAs(String error) {
+        Assert.assertEquals(new LoginPage().getRequiredUsernameErrorTxt(), error);
+    }
+
+    @Then("User should view Password error text as {string}")
+    public void userShouldViewPasswordErrorTextAs(String error) {
+        Assert.assertEquals(new LoginPage().getRequiredPasswordErrorTxt(), error);
+    }
 }

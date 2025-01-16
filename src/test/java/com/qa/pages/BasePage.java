@@ -6,10 +6,15 @@ import com.qa.utils.TestUtils;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.InteractsWithApps;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.PointerInput;
+import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -17,7 +22,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 public class BasePage {
     private AppiumDriver driver;
@@ -31,6 +38,11 @@ public class BasePage {
     public void waitForVisibility(WebElement e) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TestUtils.WAIT));
         wait.until(ExpectedConditions.visibilityOf(e));
+    }
+
+    public void waitForClickable(WebElement e) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TestUtils.WAIT));
+        wait.until(ExpectedConditions.elementToBeClickable(e));
     }
 
     public void waitForVisibility(By e) {
@@ -183,6 +195,10 @@ public class BasePage {
         }
     }
 
+    public List<WebElement> findElements(By locator) {
+        return driver.findElements(locator);
+    }
+
     public boolean find(final By element, int timeout) {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
@@ -198,5 +214,30 @@ public class BasePage {
         } catch (Exception e) {
             return false;
         }
+    }
+
+    public void scrollDown() {
+        driver.findElement(AppiumBy.androidUIAutomator(
+                "new UiScrollable(new UiSelector().scrollable(true)).scrollForward();"
+        ));
+    }
+
+    public void pressBackButton() {
+        driver.navigate().back();
+    }
+
+    public void drawLine(WebElement element, int startX, int startY, int endX, int endY) {
+        PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger1");
+        Sequence sequence = new Sequence(finger, 0);
+
+        // Presionar en el punto de inicio
+        sequence.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), startX, startY));
+        sequence.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+
+        // Mover al punto final
+        sequence.addAction(finger.createPointerMove(Duration.ofMillis(500), PointerInput.Origin.viewport(), endX, endY));
+        sequence.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+
+        driver.perform(Collections.singletonList(sequence));
     }
 }
