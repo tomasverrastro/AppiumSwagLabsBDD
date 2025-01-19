@@ -17,6 +17,9 @@ public class ProductDetailsPage extends MenuPage{
     @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/sortTV")
     private WebElement msgSuccessfulReview;
 
+    @AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/closeBt")
+    private WebElement btnOkSuccessfulReview;
+
     @AndroidFindBy(accessibility = "Closes review dialog")
     private WebElement btnCloseReviewDialog;
 
@@ -66,5 +69,9 @@ public class ProductDetailsPage extends MenuPage{
 
     public String getCartAmount() {
         return getText(msgCartAmount, "Cart amount is: ");
+    }
+
+    public void pressOkSuccessfulReview(){
+        click(btnOkSuccessfulReview);
     }
 }

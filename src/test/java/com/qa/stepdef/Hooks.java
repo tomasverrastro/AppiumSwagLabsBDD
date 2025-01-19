@@ -1,5 +1,8 @@
 package com.qa.stepdef;
 
+import com.qa.pages.BasePage;
+import com.qa.pages.MenuPage;
+import com.qa.pages.SettingsPage;
 import com.qa.utils.DriverManager;
 import com.qa.utils.GlobalParams;
 import com.qa.utils.ServerManager;
@@ -28,8 +31,16 @@ public class Hooks {
 
     }
 
+
     @After
     public void quit(Scenario scenario) throws IOException {
+
+//        new MenuPage().pressSettingsBtn();
+//        new SettingsPage().pressCatalogBtn();
+//        new MenuPage().pressSettingsBtn();
+//        new SettingsPage().pressResetAppBtn();
+//        new SettingsPage().pressConfirmResetBtn();
+//        new SettingsPage().pressOkSuccessfulResetBtn();
 
         if(scenario.isFailed()){
             byte[] screenshot = new DriverManager().getDriver().getScreenshotAs(OutputType.BYTES);
@@ -37,6 +48,8 @@ public class Hooks {
         }
 
         new VideoManager().stopRecording(scenario.getName());
+        new BasePage().closeApp();
+        new BasePage().launchApp();
 //        DriverManager driverManager = new DriverManager();
 //        if(driverManager.getDriver() != null){
 //            driverManager.getDriver().quit();

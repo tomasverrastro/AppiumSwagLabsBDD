@@ -26,6 +26,9 @@ public class SettingsPage extends BasePage{
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/message\")")
     private WebElement msgSuccessfulReset;
 
+    @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/button1\")")
+    private WebElement btnOKSuccessfulReset;
+
     public ProductsPage pressCatalogBtn(){
         click(btnCatalog, "Pressing Catalog Button");
         return new ProductsPage();
@@ -48,6 +51,10 @@ public class SettingsPage extends BasePage{
 
     public void pressConfirmResetBtn(){
         click(btnConfirmReset);
+    }
+
+    public void pressOkSuccessfulResetBtn(){
+        click(btnOKSuccessfulReset);
     }
 
     public String getSuccessfulResetTxt(){

@@ -1,33 +1,113 @@
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:18.684 ServerManager:21 - starting appium server
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:20.695 ServerManager:30 - Appium server started
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:20.708 DriverManager:29 - initializing Appium driver
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:20.720 PropertyManager:17 - Loading config properties
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:20.721 CapabilitiesManager:17 - getting capabilities
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:20.740 CapabilitiesManager:33 - appUrl isC:\Users\Tomas\IdeaProjects\AppiumSwagLabsBDD\src\test\resources\apps\SwagLabsApp.apk
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:26.788 DriverManager:41 - Driver is initialized
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:28.375 BasePage:65 - Pressing Settings button
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:29.453 BasePage:65 - Pressing Login Button
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:30.901 BasePage:82 - Login with username: bod@example.com
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:32.046 BasePage:82 - Login with password: 10203040
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:32.611 BasePage:65 - press login button
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:34.009 BasePage:108 - Product page title is:Products
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:34.860 VideoManager:35 - video path: Android_Pixel_4\Videos\TC01 - Login with correct data.mp4
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:35.349 BasePage:65 - Pressing Settings button
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:36.407 BasePage:65 - Pressing Login Button
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:37.776 BasePage:82 - Login with password: 10203040
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:38.313 BasePage:65 - press login button
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:39.041 BasePage:108 - Required Username error is:  Username is required
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:39.805 VideoManager:35 - video path: Android_Pixel_4\Videos\TC02 - Try to login without filling the user field.mp4
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:40.274 BasePage:65 - Pressing Settings button
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:41.324 BasePage:65 - Pressing Login Button
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:42.640 BasePage:82 - Login with username: bod@example.com
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:43.204 BasePage:65 - press login button
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:43.933 BasePage:108 - Required Password error is:  Enter Password
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:44.657 VideoManager:35 - video path: Android_Pixel_4\Videos\TC03 - Try to login without filling the password field.mp4
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:45.136 BasePage:65 - Pressing Settings button
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:46.175 BasePage:65 - Pressing Login Button
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:47.517 BasePage:82 - Login with username: alice@example.com
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:48.612 BasePage:82 - Login with password: 10203040
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:49.152 BasePage:65 - press login button
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:49.774 BasePage:108 - Required Password error is:  Sorry this user has been locked out.
-[Android_Pixel_4 INFO ] 2025-01-15 23:28:50.512 VideoManager:35 - video path: Android_Pixel_4\Videos\TC04 - Try to login with a blocked user.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:15.692 ServerManager:21 - starting appium server
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:17.700 ServerManager:30 - Appium server started
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:17.713 DriverManager:29 - initializing Appium driver
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:17.725 PropertyManager:17 - Loading config properties
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:17.725 CapabilitiesManager:17 - getting capabilities
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:17.744 CapabilitiesManager:33 - appUrl isC:\Users\Tomas\IdeaProjects\AppiumSwagLabsBDD\src\test\resources\apps\SwagLabsApp.apk
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:22.911 DriverManager:41 - Driver is initialized
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:24.493 BasePage:65 - Pressing Settings button
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:25.638 BasePage:65 - Pressing Login Button
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:27.065 BasePage:82 - Login with username: bod@example.com
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:28.159 BasePage:82 - Login with password: 10203040
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:28.743 BasePage:65 - press login button
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:30.095 BasePage:108 - Product page title is:Products
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:30.977 VideoManager:35 - video path: Android_Pixel_4\Videos\TC01 - Login with correct data.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:34.197 BasePage:65 - Pressing Settings button
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:35.327 BasePage:65 - Pressing Login Button
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:36.760 BasePage:82 - Login with password: 10203040
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:37.548 BasePage:65 - press login button
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:38.266 BasePage:108 - Required Username error is:  Username is required
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:39.111 VideoManager:35 - video path: Android_Pixel_4\Videos\TC02 - Try to login without filling the user field.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:42.227 BasePage:65 - Pressing Settings button
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:43.347 BasePage:65 - Pressing Login Button
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:44.757 BasePage:82 - Login with username: bod@example.com
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:45.359 BasePage:65 - press login button
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:46.082 BasePage:108 - Required Password error is:  Enter Password
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:46.901 VideoManager:35 - video path: Android_Pixel_4\Videos\TC03 - Try to login without filling the password field.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:50.223 BasePage:65 - Pressing Settings button
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:51.335 BasePage:65 - Pressing Login Button
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:52.801 BasePage:82 - Login with username: alice@example.com
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:53.912 BasePage:82 - Login with password: 10203040
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:54.492 BasePage:65 - press login button
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:55.119 BasePage:108 - Required Password error is:  Sorry this user has been locked out.
+[Android_Pixel_4 INFO ] 2025-01-19 01:13:55.949 VideoManager:35 - video path: Android_Pixel_4\Videos\TC04 - Try to login with a blocked user.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:01.858 BasePage:65 - press Sauce Labs Onesie link
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:04.920 BasePage:108 - product description is: Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:06.116 VideoManager:35 - video path: Android_Pixel_4\Videos\TH05 - View details of Sauce Labs Onesie.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:09.311 BasePage:65 - Pressing Sorting button
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:10.316 BasePage:65 - Pressing Sort By Descending Name button
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:14.929 VideoManager:35 - video path: Android_Pixel_4\Videos\TH06 - Sort catalog by descendant.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:18.121 BasePage:65 - Pressing Sorting button
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:19.120 BasePage:65 - Pressing Sort By Ascending Price button
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:23.684 VideoManager:35 - video path: Android_Pixel_4\Videos\TH07 - Sort catalog by ascendant price.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:26.997 BasePage:71 - Clicking product on position 1
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:27.991 BasePage:65 - Clicking on Add to Cart button 
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:29.860 BasePage:71 - Clicking product on position 4
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:30.741 BasePage:65 - Clicking on Add to Cart button 
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:31.342 BasePage:65 - Pressing Cart button
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:33.656 BasePage:82 - Login with username: bod@example.com
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:34.751 BasePage:82 - Login with password: 10203040
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:35.325 BasePage:65 - press login button
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:37.343 BasePage:82 - Filling full name as: Tomas Verrastro
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:39.055 BasePage:82 - Filling address 1 as: Washington 1234
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:40.750 BasePage:82 - Filling city as: Buenos Aires
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:42.446 BasePage:82 - Filling zip code as: 50305
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:44.140 BasePage:82 - Filling country as: Argentina
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:45.238 BasePage:65 - press to payment button
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:46.660 BasePage:82 - Filling full name as: Tomas Verrastro
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:48.360 BasePage:82 - Filling card number with: 8493373994032703
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:50.052 BasePage:82 - Filling expiration date with: 0531
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:51.756 BasePage:82 - Filling security code with: 754
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:52.862 BasePage:65 - press review order button
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:53.664 BasePage:65 - press place order button
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:54.385 BasePage:108 - Checkout complete text is: Checkout Complete
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:55.329 VideoManager:35 - video path: Android_Pixel_4\Videos\TH08 - Purchase 2 items before logging in.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:58.699 BasePage:71 - Clicking product on position 1
+[Android_Pixel_4 INFO ] 2025-01-19 01:14:59.717 BasePage:65 - Pressing 5 stars rating button
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:00.383 BasePage:108 - Successful review text is: Thank you for submitting your review!
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:01.305 VideoManager:35 - video path: Android_Pixel_4\Videos\TH09 - Rate an item.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:04.566 BasePage:71 - Clicking product on position 1
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:05.529 BasePage:65 - Clicking on Add to Cart button 
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:06.246 BasePage:65 - Pressing Cart button
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:07.137 BasePage:65 - Clicking on Remove Item button
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:12.704 BasePage:108 - Page title is: No Items
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:13.491 VideoManager:35 - video path: Android_Pixel_4\Videos\TH10 - Add item to chart and remove it.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:16.786 BasePage:71 - Clicking product on position 1
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:17.779 BasePage:65 - Clicking on Add to Cart button 
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:18.494 BasePage:65 - Pressing Cart button
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:20.763 BasePage:82 - Login with username: bod@example.com
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:21.845 BasePage:82 - Login with password: 10203040
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:22.404 BasePage:65 - press login button
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:24.356 BasePage:82 - Filling full name as: Tomas Verrastro
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:26.052 BasePage:82 - Filling address 1 as: Washington 1234
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:27.739 BasePage:82 - Filling city as: Buenos Aires
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:29.442 BasePage:82 - Filling country as: Argentina
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:30.535 BasePage:65 - press to payment button
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:31.248 BasePage:108 - Zip Error text is: Please provide your zip
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:32.075 VideoManager:35 - video path: Android_Pixel_4\Videos\TH11 - Try to purchase without entering ZIP code.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:35.444 BasePage:71 - Clicking product on position 1
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:36.438 BasePage:65 - Clicking on Add to Cart button 
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:38.273 BasePage:71 - Clicking product on position 4
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:39.166 BasePage:65 - Clicking on Add to Cart button 
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:39.784 BasePage:65 - Pressing Cart button
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:42.061 BasePage:82 - Login with username: bod@example.com
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:43.122 BasePage:82 - Login with password: 10203040
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:43.691 BasePage:65 - press login button
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:45.663 BasePage:82 - Filling full name as: Tomas Verrastro
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:47.342 BasePage:82 - Filling address 1 as: Washington 1234
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:49.031 BasePage:82 - Filling city as: Buenos Aires
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:50.716 BasePage:82 - Filling zip code as: 50305
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:52.426 BasePage:82 - Filling country as: Argentina
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:53.508 BasePage:65 - press to payment button
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:54.924 BasePage:82 - Filling full name as: Tomas Verrastro
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:56.613 BasePage:82 - Filling card number with: 8493373994032703
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:58.657 BasePage:82 - Filling expiration date with: 0531
+[Android_Pixel_4 INFO ] 2025-01-19 01:15:59.753 BasePage:65 - press review order button
+[Android_Pixel_4 INFO ] 2025-01-19 01:16:00.485 BasePage:108 - Security Code Error text is: Value looks invalid.
+[Android_Pixel_4 INFO ] 2025-01-19 01:16:01.417 VideoManager:35 - video path: Android_Pixel_4\Videos\TH12 - Try to purchase without entering security code.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:16:04.585 BasePage:65 - Pressing Settings button
+[Android_Pixel_4 INFO ] 2025-01-19 01:16:05.676 BasePage:65 - Pressing Drawing Button
+[Android_Pixel_4 INFO ] 2025-01-19 01:16:09.681 VideoManager:35 - video path: Android_Pixel_4\Videos\TH13 - Make a draw on drawing section.mp4
+[Android_Pixel_4 INFO ] 2025-01-19 01:16:12.919 BasePage:65 - Pressing Settings button
+[Android_Pixel_4 INFO ] 2025-01-19 01:16:14.006 BasePage:65 - Pressing Reset App Button
+[Android_Pixel_4 INFO ] 2025-01-19 01:16:16.588 VideoManager:35 - video path: Android_Pixel_4\Videos\TH14 - Reset the app.mp4

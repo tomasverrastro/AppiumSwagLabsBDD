@@ -14,6 +14,9 @@ public class DrawingPage extends MenuPage{
     @AndroidFindBy(id = "android:id/message")
     private WebElement msgSuccessfulSave;
 
+    @AndroidFindBy(id = "android:id/button1")
+    private WebElement btnOkSaveDrawing;
+
     @AndroidFindBy(id = "com.android.permissioncontroller:id/permission_allow_button")
     private WebElement btnAllowPermission;
 
@@ -23,6 +26,10 @@ public class DrawingPage extends MenuPage{
 
     public void pressSaveDrawingBtn(){
         click(btnSaveDrawing);
+    }
+
+    public void pressOkSaveDrawingBtn(){
+        click(btnOkSaveDrawing);
     }
 
     public void pressAllowPermissionBtn(){

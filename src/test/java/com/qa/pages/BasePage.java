@@ -56,12 +56,12 @@ public class BasePage {
     }
 
     public void click(WebElement e) {
-        waitForVisibility(e);
+        waitForClickable(e);
         e.click();
     }
 
     public void click(WebElement e, String msg) {
-        waitForVisibility(e);
+        waitForClickable(e);
         utils.log().info(msg);
         e.click();
     }

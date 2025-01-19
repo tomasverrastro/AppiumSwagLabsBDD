@@ -23,9 +23,9 @@ public class CartPage extends MenuPage{
         return getText(msgPageTitle, "Page title is: ");
     }
 
-    public CartPage pressRemoveItem() throws Exception {
-        click(andScrollToElementUsingUiScrollable("text", "Remove Item"), "Clicking on Remove Item button");
-        return this;
+    public void pressRemoveItem() throws Exception {
+        Thread.sleep(500);
+        click(andScrollToElementUsingUiScrollable("resourceId", "com.saucelabs.mydemoapp.android:id/removeBt"), "Clicking on Remove Item button");
     }
 
     public LoginPage pressCheckout(){
